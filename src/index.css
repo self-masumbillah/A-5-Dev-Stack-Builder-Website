@@ -189,6 +189,47 @@
 }
 
 
+
+/*  Mobile Menu */
+
+ .mobile-menu-btn {
+  display: none;
+
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.mobile-menu-btn span {
+  display: block;
+
+  width: 22px;
+  height: 2px;
+
+  margin: 5px auto;
+
+  background: #26334a;
+
+  border-radius: 10px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* HERO*/
 
 .hero{
@@ -360,6 +401,104 @@
 
 
 
+/* MOBILE**********************************************************************************/
+
+  @media (max-width: 700px) {
+
+  .navbar {
+    height: 68px;
+  }
+
+  .navbar-container {
+    width: calc(100% - 32px);
+  }
+
+  .nav-links,
+  .nav-actions {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+
+  .hero-container {
+    width: calc(100% - 32px);
+
+    min-height: auto;
+
+    padding-top: 55px;
+    padding-bottom: 55px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .hero-content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .hero-title {
+    font-size: clamp(39px, 11vw, 52px);
+
+    line-height: 1.02;
+
+    letter-spacing: -1.8px;
+  }
+
+  .hero-description {
+    max-width: 550px;
+
+    margin: 24px auto 0;
+
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .hero-actions {
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    margin-top: 32px;
+  }
+
+  .hero-image-wrapper {
+    width: 100%;
+
+    margin-top: 45px;
+
+    padding: 0;
+  }
+
+  .hero-image {
+    width: min(330px, 85vw);
+  }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* TECHNOLOGY SECTION */
 
 .technology-section {
@@ -412,9 +551,7 @@
 }
 
 
-/* =====================================================
-   TECHNOLOGY + STACK LAYOUT
-===================================================== */
+/* TECHNOLOGY + STACK LAYOUT*/
 
 .technology-layout {
   display: grid;
@@ -679,35 +816,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* YOUR STACK SIDEBAR ////////////////////////////////////////////////////////////////////////////*/
 
 .your-stack {
@@ -965,30 +1073,38 @@
 
 
 
+/*  MOBILE*****************************************************************************************/
 
+@media (max-width: 560px) {
 
+  .technology-section {
+    padding: 50px 0 60px;
+  }
 
+  .technology-container {
+    width: calc(100% - 32px);
+  }
 
+  .technology-title {
+    font-size: 27px;
+  }
 
+  .technology-subtitle {
+    font-size: 14px;
+  }
 
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
 
+  .tech-card {
+    min-height: 250px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .stack-items {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 
@@ -1221,19 +1337,49 @@
 }
 
 
+/* MOBILE********************************************************************************/
 
+@media (max-width: 600px) {
 
+  .footer {
+    padding: 45px 0 25px;
+  }
 
+  .footer-container {
+    width: calc(100% - 32px);
+  }
 
+  .footer-main {
+    display: grid;
 
+    grid-template-columns: repeat(2, 1fr);
 
+    gap: 35px 25px;
+  }
 
+  .footer-brand {
+    grid-column: span 2;
 
+    max-width: 100%;
+  }
 
+  .footer-description {
+    max-width: 100%;
+  }
 
+  .footer-bottom {
+    margin-top: 35px;
 
+    padding-top: 25px;
 
+    flex-direction: column;
 
+    align-items: flex-start;
+
+    gap: 16px;
+  }
+
+}
 
 
 
