@@ -1,9 +1,9 @@
 import React from "react";
 import bannerStack from "../assets/banner-stack.png";
 
-const Hero: React.FC = () => {
-  return (
-    <section className="hero" id="home">
+const Hero: React.FC = () =>{
+  return(
+<section className="hero" id="home">
       <div className="hero-container">
 
         {/* Hero Content */}
